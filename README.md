@@ -46,6 +46,5 @@ Let's work together to make the **ZOLAHA** website an even more remarkable digit
 
 Thank you for your interest in the **ZOLAHA** project. Your support and collaboration are what drive us to deliver excellence in the digital realm. Together, we'll shape the future of online success!
 
-For inquiries, please contact us at contact@zolaha.com.
+For inquiries, please contact us at rishiratanmishra2@gmail.com.
 
-*Note: This README is a work of fiction created for demonstration purposes.*
