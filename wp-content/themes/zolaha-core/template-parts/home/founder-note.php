@@ -3,7 +3,7 @@
  * Modular Founder Note & Origin Story Template Part
  *
  * @package Zolaha_Core
- * @version 1.0.0
+ * @version 2.1.0
  */
 
 defined('ABSPATH') || exit;
@@ -12,18 +12,20 @@ defined('ABSPATH') || exit;
 <section id="story" class="section-spacing" aria-label="<?php esc_attr_e('Founder Story', 'zolaha'); ?>">
     <div class="zolaha-container">
         <div class="founder-card">
-            <span class="product-status-tag status-live" style="margin-bottom: 1.5rem;">
-                <?php esc_html_e('Origin Story • 2020 to 2026', 'zolaha'); ?>
+            <span class="card-status-badge badge-live-emerald" style="margin-bottom: var(--space-6);">
+                <span class="live-pulse-dot" aria-hidden="true"></span>
+                <?php esc_html_e('03 // FOUNDER NARRATIVE (2020 — 2026)', 'zolaha'); ?>
             </span>
+
             <blockquote class="founder-quote">
-                &ldquo;<?php esc_html_e('In 2020, Zolaha began as a modest blog in Ballia, Uttar Pradesh. Over the years, we experimented with e-commerce, affiliate models, student assignment hubs, and agency services. Every bump in the road taught us a profound truth: real value isn\'t about building another generic service—it is about crafting sovereign, independent digital products that solve high-friction problems with elegance, speed, and uncompromising privacy.', 'zolaha'); ?>&rdquo;
+                &ldquo;<?php esc_html_e('In 2020, Zolaha began as a small digital experiment in Ballia, Uttar Pradesh. Across six years, we tested e-commerce, affiliate channels, college hubs, and agency models. Every iteration taught us one undeniable reality: the web doesn\'t need another bloated agency or surveillance-heavy SaaS. It needs clean, sovereign, independent tools that treat the user\'s device and privacy with total respect.', 'zolaha'); ?>&rdquo;
             </blockquote>
 
             <div class="founder-profile">
-                <div class="founder-avatar">R</div>
+                <div class="founder-avatar-chip">R</div>
                 <div>
                     <div class="founder-name"><?php esc_html_e('Rishi Ratan Mishra', 'zolaha'); ?></div>
-                    <div class="founder-role"><?php esc_html_e('Founder & Principal Engineer, Zolaha Technologies', 'zolaha'); ?></div>
+                    <div class="founder-role"><?php esc_html_e('Founder & Software Architect // Ballia, Purvanchal (UP)', 'zolaha'); ?></div>
                 </div>
             </div>
         </div>

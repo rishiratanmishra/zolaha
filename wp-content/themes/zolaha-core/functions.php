@@ -10,7 +10,7 @@
 defined('ABSPATH') || exit;
 
 // Define Theme Constants
-define('ZOLAHA_VERSION', '1.0.0');
+define('ZOLAHA_VERSION', '2.1.0');
 define('ZOLAHA_DIR', get_template_directory());
 define('ZOLAHA_URI', get_template_directory_uri());
 
