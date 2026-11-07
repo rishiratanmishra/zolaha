@@ -10,7 +10,7 @@
 defined('ABSPATH') || exit;
 
 // Define Theme Constants
-define('ZOLAHA_VERSION', '2.1.0');
+define('ZOLAHA_VERSION', '2.2.0');
 define('ZOLAHA_DIR', get_template_directory());
 define('ZOLAHA_URI', get_template_directory_uri());
 
@@ -30,11 +30,10 @@ function zolaha_inject_theme_bootstrapper() {
         (function() {
             try {
                 var storedTheme = localStorage.getItem('zolaha-theme');
-                var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                var initialTheme = storedTheme || (systemDark ? 'dark' : 'light');
+                var initialTheme = storedTheme || 'light';
                 document.documentElement.setAttribute('data-theme', initialTheme);
             } catch (e) {
-                document.documentElement.setAttribute('data-theme', 'dark');
+                document.documentElement.setAttribute('data-theme', 'light');
             }
         })();
     </script>

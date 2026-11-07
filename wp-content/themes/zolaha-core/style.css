@@ -3,8 +3,8 @@ Theme Name: Zolaha Core
 Theme URI: https://zolaha.com/
 Author: Zolaha Technologies (Rishi Ratan Mishra)
 Author URI: https://zolaha.com/about/
-Description: Enterprise-grade, privacy-first, ultra-fast WordPress theme engineered for Zolaha Technologies and its suite of sovereign digital products.
-Version: 2.1.0
+Description: A lightweight WordPress theme for Zolaha, an independent digital product studio in Ballia, India.
+Version: 2.2.2
 Tested up to: 6.7
 Requires PHP: 7.4
 License: Proprietary / All Rights Reserved
@@ -13,104 +13,113 @@ Text Domain: zolaha
 Tags: custom-colors, custom-menu, custom-logo, full-width-template, theme-options, translation-ready
 */
 
-/* ========================================================
-   ZOLAHA TIER-1 DESIGN SYSTEM TOKENS (v2.1.0)
-   Aesthetic: Linear / Stripe / Supabase / Raycast Craft Standard
-   Palette: Electric Mantis (#00D084) + Obsidian Slate (#06090E)
-   Typography: Plus Jakarta Sans + JetBrains Mono / ui-monospace
-   Spatial Rhythm: Strict 4px/8px Incremental Scale
-   ======================================================== */
+/* Zolaha visual tokens */
 
 :root {
-  /* 1. Primitive Palette */
-  --mantis-400: #10B981;
-  --mantis-500: #00D084;
-  --mantis-600: #00B371;
-  --mantis-glow: rgba(0, 208, 132, 0.22);
-  --mantis-subtle: rgba(0, 208, 132, 0.08);
+  --bg-page: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #F8FAFC;
+  --bg-surface-hover: #E2E8F0;
+  --bg-glass: rgba(248, 250, 252, 0.92);
 
-  --slate-950: #06090E;
-  --slate-900: #0B0F17;
-  --slate-850: #101623;
-  --slate-800: #161F31;
-  --slate-700: #243048;
-  --slate-600: #404F6B;
-  --slate-400: #8493AC;
-  --slate-200: #CBD5E1;
-  --slate-50:  #F8FAFC;
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --text-subtle: #64748B;
 
-  /* 2. Semantic Surface Tokens (Default Dark Mode) */
-  --bg-page: var(--slate-950);
-  --bg-surface: var(--slate-900);
-  --bg-surface-elevated: var(--slate-850);
-  --bg-surface-hover: var(--slate-800);
-  --bg-glass: rgba(11, 15, 23, 0.85);
+  --border-subtle: #E2E8F0;
+  --border-highlight: #E2E8F0;
+  --border-active: #047857;
+  --border-glass: rgba(15, 23, 42, 0.08);
 
-  --text-primary: #FFFFFF;
-  --text-secondary: var(--slate-200);
-  --text-muted: var(--slate-400);
-  --text-subtle: var(--slate-600);
+  --mantis-400: #059669;
+  --mantis-500: #047857;
+  --mantis-600: #047857;
+  --mantis-glow: rgba(4, 120, 87, 0.12);
+  --mantis-subtle: rgba(4, 120, 87, 0.08);
 
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-highlight: rgba(255, 255, 255, 0.16);
-  --border-active: var(--mantis-500);
-  --border-glass: rgba(255, 255, 255, 0.06);
+  --slate-950: #0F172A;
+  --slate-900: #0F172A;
+  --slate-850: #334155;
+  --slate-800: #334155;
+  --slate-700: #64748B;
+  --slate-600: #64748B;
+  --slate-400: #64748B;
+  --slate-200: #E2E8F0;
+  --slate-50: #F8FAFC;
 
   --zolaha-mantis: var(--mantis-500);
   --zolaha-mantis-hover: var(--mantis-600);
   --zolaha-mantis-glow: var(--mantis-glow);
   --zolaha-mantis-subtle: var(--mantis-subtle);
 
-  /* 3. Typography Stacks */
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace;
 
-  /* 4. Spatial Rhythm (8pt Grid) */
-  --space-1: 0.25rem;  /* 4px */
-  --space-2: 0.5rem;   /* 8px */
-  --space-3: 0.75rem;  /* 12px */
-  --space-4: 1rem;     /* 16px */
-  --space-6: 1.5rem;   /* 24px */
-  --space-8: 2rem;     /* 32px */
-  --space-12: 3rem;    /* 48px */
-  --space-16: 4rem;    /* 64px */
-  --space-24: 6rem;    /* 96px */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
 
-  /* 5. Radii Scale */
   --radius-xs: 4px;
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
   --radius-full: 9999px;
 
-  /* 6. Shadows & Tactile Elevation */
-  --shadow-card: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 20px 40px -15px rgba(0, 0, 0, 0.6);
-  --shadow-glow: 0 0 25px rgba(0, 208, 132, 0.25);
-  --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.3);
-
-  /* 7. Containers */
-  --container-max: 1240px;
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.05);
+  --shadow-glow: 0 4px 12px rgba(4, 120, 87, 0.12);
+  --shadow-subtle: 0 2px 8px rgba(15, 23, 42, 0.05);
+  --container-max: 1200px;
 }
 
-/* Light Theme Overrides */
-[data-theme="light"] {
-  --bg-page: #F8FAFC;
-  --bg-surface: #FFFFFF;
-  --bg-surface-elevated: #F1F5F9;
-  --bg-surface-hover: #E2E8F0;
-  --bg-glass: rgba(255, 255, 255, 0.9);
+[data-theme="dark"] {
+  --bg-page: #181818;
+  --bg-surface: #1F1F1F;
+  --bg-surface-elevated: #272727;
+  --bg-surface-hover: #313131;
+  --bg-glass: rgba(24, 24, 24, 0.94);
 
-  --text-primary: #0F172A;
-  --text-secondary: #334155;
-  --text-muted: #64748B;
-  --text-subtle: #94A3B8;
+  --text-primary: #FFFFFF;
+  --text-secondary: #CBD5E1;
+  --text-muted: #8493AC;
+  --text-subtle: #8493AC;
 
-  --border-subtle: rgba(15, 23, 42, 0.08);
-  --border-highlight: rgba(15, 23, 42, 0.16);
-  --border-glass: rgba(15, 23, 42, 0.06);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-highlight: rgba(255, 255, 255, 0.16);
+  --border-active: #059669;
+  --border-glass: rgba(255, 255, 255, 0.06);
 
-  --shadow-card: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 10px 30px -10px rgba(15, 23, 42, 0.08);
-  --shadow-glow: 0 0 25px rgba(0, 208, 132, 0.2);
-  --shadow-subtle: 0 4px 12px rgba(15, 23, 42, 0.04);
+  --mantis-400: #059669;
+  --mantis-500: #059669;
+  --mantis-600: #047857;
+  --mantis-glow: rgba(5, 150, 105, 0.14);
+  --mantis-subtle: rgba(5, 150, 105, 0.12);
+
+  --slate-950: #FFFFFF;
+  --slate-900: #CBD5E1;
+  --slate-850: #8493AC;
+  --slate-800: #64748B;
+  --slate-700: #64748B;
+  --slate-600: #8493AC;
+  --slate-400: #8493AC;
+  --slate-200: #CBD5E1;
+  --slate-50: #181818;
+
+  --zolaha-mantis: var(--mantis-500);
+  --zolaha-mantis-hover: var(--mantis-600);
+  --zolaha-mantis-glow: var(--mantis-glow);
+  --zolaha-mantis-subtle: var(--mantis-subtle);
+
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.16);
+  --shadow-glow: 0 4px 12px rgba(5, 150, 105, 0.12);
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.16);
 }

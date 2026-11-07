@@ -1,57 +1,41 @@
 <?php
 /**
- * Modular Philosophy Section Template Part
+ * How we build
  *
  * @package Zolaha_Core
- * @version 2.1.0
  */
 
 defined('ABSPATH') || exit;
 ?>
 
-<section id="philosophy" class="section-spacing philosophy-section" aria-label="<?php esc_attr_e('Our Philosophy', 'zolaha'); ?>">
+<section id="philosophy" class="section-spacing philosophy-section" aria-labelledby="philosophy-title">
     <div class="zolaha-container">
         <div class="section-header-centered">
-            <span class="badge-overline"><?php esc_html_e('02 // FIRST PRINCIPLES', 'zolaha'); ?></span>
-            <h2 class="section-title-large"><?php esc_html_e('The Grasshopper Philosophy', 'zolaha'); ?></h2>
-            <p style="color: var(--text-secondary); font-size: 1.125rem;">
-                <?php esc_html_e('We reject bloated SaaS, forced sign-ups, and predatory subscription traps. Here is the architectural standard we build by.', 'zolaha'); ?>
-            </p>
+            <p class="section-eyebrow"><?php esc_html_e('What matters to us', 'zolaha'); ?></p>
+            <h2 id="philosophy-title" class="section-title-large"><?php esc_html_e('Made to be useful', 'zolaha'); ?></h2>
         </div>
 
-        <div class="pillars-grid">
-            <!-- Pillar 1 -->
-            <div class="pillar-card">
-                <div class="pillar-icon-box" aria-hidden="true">
-                    <?php echo zolaha_icon('feather'); ?>
-                </div>
-                <h3 class="pillar-title"><?php esc_html_e('Spring-Loaded & Agile', 'zolaha'); ?></h3>
-                <p class="pillar-text">
-                    <?php esc_html_e('Named after the nimble grasshopper (Zolaha) in Eastern UP, our tools are engineered to leap over friction. Zero heavy server roundtrips, zero framework bloat, and sub-second execution.', 'zolaha'); ?>
+        <div class="principles-list">
+            <article class="principle-row">
+                <h3 class="principle-title"><?php esc_html_e('Start with the task', 'zolaha'); ?></h3>
+                <p class="principle-text">
+                    <?php esc_html_e('A tool should make the next step clear, not ask you to learn a complicated system first.', 'zolaha'); ?>
                 </p>
-            </div>
+            </article>
 
-            <!-- Pillar 2 -->
-            <div class="pillar-card">
-                <div class="pillar-icon-box" aria-hidden="true">
-                    <?php echo zolaha_icon('shield-check'); ?>
-                </div>
-                <h3 class="pillar-title"><?php esc_html_e('Zero-Knowledge Compute', 'zolaha'); ?></h3>
-                <p class="pillar-text">
-                    <?php esc_html_e('Your confidential certificates, photographs, and identity cards never touch a remote cloud database. Everything executes in-browser via WebAssembly and Web Workers.', 'zolaha'); ?>
+            <article class="principle-row">
+                <h3 class="principle-title"><?php esc_html_e('Keep your files close', 'zolaha'); ?></h3>
+                <p class="principle-text">
+                    <?php esc_html_e('When a tool processes a file in your browser, the file stays on your device.', 'zolaha'); ?>
                 </p>
-            </div>
+            </article>
 
-            <!-- Pillar 3 -->
-            <div class="pillar-card">
-                <div class="pillar-icon-box" aria-hidden="true">
-                    <?php echo zolaha_icon('zap'); ?>
-                </div>
-                <h3 class="pillar-title"><?php esc_html_e('Zero-Friction Sovereign Utility', 'zolaha'); ?></h3>
-                <p class="pillar-text">
-                    <?php esc_html_e('No email paywalls, no password reset loops, no credit card prompts for basic human utility. You land, finish your task in two taps, and get back to your life.', 'zolaha'); ?>
+            <article class="principle-row">
+                <h3 class="principle-title"><?php esc_html_e('No extra steps', 'zolaha'); ?></h3>
+                <p class="principle-text">
+                    <?php esc_html_e('We aim to let you get to the useful part without an account or a long setup.', 'zolaha'); ?>
                 </p>
-            </div>
+            </article>
         </div>
     </div>
 </section>

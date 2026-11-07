@@ -1,9 +1,8 @@
 <?php
 /**
- * Modular Header & Navigation Template Part
+ * Site navigation
  *
  * @package Zolaha_Core
- * @version 2.1.0
  */
 
 defined('ABSPATH') || exit;
@@ -12,43 +11,29 @@ defined('ABSPATH') || exit;
 <header class="site-header" role="banner">
     <div class="zolaha-container">
         <div class="nav-wrapper">
-            <!-- Brand Logo Mark with Grasshopper Tag -->
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="brand-link" aria-label="<?php esc_attr_e('Zolaha Home', 'zolaha'); ?>">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="brand-link" aria-label="<?php esc_attr_e('Zolaha home', 'zolaha'); ?>">
                 <?php echo zolaha_icon('brand-logo'); ?>
-                <span>ZOLAHA</span>
-                <span class="brand-tag"><?php esc_html_e('Studio', 'zolaha'); ?></span>
             </a>
 
-            <!-- Desktop Navigation Menu -->
-            <nav class="nav-menu" role="navigation" aria-label="<?php esc_attr_e('Primary Navigation', 'zolaha'); ?>">
-                <a href="#products" class="nav-link"><?php esc_html_e('Product Suite', 'zolaha'); ?></a>
-                <a href="#philosophy" class="nav-link"><?php esc_html_e('Philosophy', 'zolaha'); ?></a>
-                <a href="#story" class="nav-link"><?php esc_html_e('Origin Story', 'zolaha'); ?></a>
-                <a href="<?php echo esc_url(home_url('/llms.txt')); ?>" class="nav-link" target="_blank" rel="noopener noreferrer">llms.txt</a>
+            <nav class="nav-menu" aria-label="<?php esc_attr_e('Main navigation', 'zolaha'); ?>">
+                <a href="<?php echo esc_url(home_url('/#products')); ?>" class="nav-link"><?php esc_html_e('Tools', 'zolaha'); ?></a>
+                <a href="<?php echo esc_url(home_url('/#philosophy')); ?>" class="nav-link"><?php esc_html_e('How we build', 'zolaha'); ?></a>
             </nav>
 
-            <!-- Action Area: Dark/Light Mode + Mobile Menu Button -->
             <div class="nav-actions">
-                <button type="button" class="theme-toggle-btn" data-action="toggle-theme" aria-label="<?php esc_attr_e('Toggle Dark/Light Mode', 'zolaha'); ?>">
-                    <span class="icon-sun hidden"><?php echo zolaha_icon('sun'); ?></span>
-                    <span class="icon-moon"><?php echo zolaha_icon('moon'); ?></span>
+                <button type="button" class="theme-toggle-btn" data-action="toggle-theme" data-light-label="<?php esc_attr_e('Use light mode', 'zolaha'); ?>" data-dark-label="<?php esc_attr_e('Use dark mode', 'zolaha'); ?>" aria-label="<?php esc_attr_e('Toggle light and dark mode', 'zolaha'); ?>">
+                    <?php echo zolaha_icon('moon', 'theme-icon theme-icon-moon'); ?>
+                    <?php echo zolaha_icon('sun', 'theme-icon theme-icon-sun'); ?>
                 </button>
-
-                <!-- Mobile Hamburger Button -->
-                <button type="button" class="theme-toggle-btn mobile-menu-toggle" data-action="toggle-mobile-menu" aria-expanded="false" aria-label="<?php esc_attr_e('Open Navigation Menu', 'zolaha'); ?>">
-                    <span class="mobile-open-icon"><?php echo zolaha_icon('menu'); ?></span>
+                <button type="button" class="theme-toggle-btn mobile-menu-toggle" data-action="toggle-mobile-menu" data-open-label="<?php esc_attr_e('Open navigation menu', 'zolaha'); ?>" data-close-label="<?php esc_attr_e('Close navigation menu', 'zolaha'); ?>" aria-expanded="false" aria-controls="mobile-drawer" aria-label="<?php esc_attr_e('Open navigation menu', 'zolaha'); ?>">
+                    <span class="menu-icon" aria-hidden="true"></span>
                 </button>
             </div>
         </div>
     </div>
 
-    <!-- Mobile Drawer Dropdown -->
-    <div id="mobile-drawer" class="hidden" style="background: var(--bg-surface); border-bottom: 1px solid var(--border-subtle); padding: 1.5rem 1rem;">
-        <div class="zolaha-container" style="display: flex; flex-direction: column; gap: 1rem;">
-            <a href="#products" class="nav-link" style="font-size: 1.1rem; padding: 0.5rem 0;"><?php esc_html_e('Product Suite', 'zolaha'); ?></a>
-            <a href="#philosophy" class="nav-link" style="font-size: 1.1rem; padding: 0.5rem 0;"><?php esc_html_e('Philosophy', 'zolaha'); ?></a>
-            <a href="#story" class="nav-link" style="font-size: 1.1rem; padding: 0.5rem 0;"><?php esc_html_e('Origin Story', 'zolaha'); ?></a>
-            <a href="<?php echo esc_url(home_url('/llms.txt')); ?>" class="nav-link" style="font-size: 1.1rem; padding: 0.5rem 0;">llms.txt</a>
-        </div>
-    </div>
+    <nav id="mobile-drawer" class="mobile-drawer hidden" aria-label="<?php esc_attr_e('Mobile navigation', 'zolaha'); ?>">
+        <a href="<?php echo esc_url(home_url('/#products')); ?>" class="nav-link"><?php esc_html_e('Tools', 'zolaha'); ?></a>
+        <a href="<?php echo esc_url(home_url('/#philosophy')); ?>" class="nav-link"><?php esc_html_e('How we build', 'zolaha'); ?></a>
+    </nav>
 </header>

@@ -8,7 +8,7 @@
 
 defined('ABSPATH') || exit;
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?> data-theme="dark">
+<html <?php language_attributes(); ?> data-theme="light">
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
@@ -21,6 +21,6 @@ defined('ABSPATH') || exit;
 <?php wp_body_open(); ?>
 
 <div id="page" class="site-wrapper">
-    <a class="skip-link screen-reader-text hidden" href="#primary"><?php esc_html_e('Skip to content', 'zolaha'); ?></a>
+    <a class="skip-link" href="#primary"><?php esc_html_e('Skip to content', 'zolaha'); ?></a>
     
     <?php get_template_part('template-parts/navigation/navbar'); ?>

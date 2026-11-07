@@ -20,16 +20,11 @@ function zolaha_icon($name, $class = '') {
 
     switch ($name) {
         case 'brand-logo':
-            return '<svg' . $class_attr . ' width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect width="36" height="36" rx="10" fill="url(#zolaha-grad)"/>
-                <path d="M10 11H26L14 25H26" stroke="#07090E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="25" cy="11" r="2.5" fill="#07090E"/>
-                <defs>
-                    <linearGradient id="zolaha-grad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#00D084"/>
-                        <stop offset="1" stop-color="#059669"/>
-                    </linearGradient>
-                </defs>
+            return '<svg' . $class_attr . ' width="132" height="36" viewBox="0 0 132 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect width="36" height="36" rx="9" fill="#047857"/>
+                <path d="M10 11H26L14 25H26" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="25" cy="11" r="2.25" fill="#FFFFFF"/>
+                <text x="48" y="25" fill="currentColor" font-family="Manrope, sans-serif" font-size="21" font-weight="700" letter-spacing="-0.6">Zolaha</text>
             </svg>';
 
         case 'sun':

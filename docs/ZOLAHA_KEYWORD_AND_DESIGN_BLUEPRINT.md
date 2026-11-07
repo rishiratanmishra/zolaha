@@ -57,44 +57,32 @@ zolaha.com (The Product Studio Portal)
 
 ---
 
-## Part 3: UI/UX Pro Max Design System Specification
+## Part 3: Zolaha Homepage Design System
 
-Using the `ui-ux-pro-max` dataset, we select the **Modern Micro-SaaS & Bento Box Grid** style. This balances extreme speed with a sleek, trustworthy tech aesthetic.
+The homepage uses a light, editorial product directory rather than a generic SaaS dashboard. The studio story and real product status lead; unfinished products are described plainly instead of being shown with invented interface metrics.
 
-### 1. Color Palette Tokens (WCAG 4.5:1 Contrast Compliant)
-Selected from `colors.csv` (Micro SaaS / Developer Utility profile):
+### 1. Color tokens
 
-| Token Name | Hex Code | Role & Usage |
+| Token | Value | Role |
 |---|---|---|
-| `--color-primary` | `#4F46E5` (Indigo-600) | Brand primary, active tabs, focus states, interactive borders |
-| `--color-primary-hover` | `#4338CA` (Indigo-700) | Button hover state |
-| `--color-accent` | `#059669` (Emerald-600) | Primary CTA ("Download Image", "Process File", "Success") |
-| `--color-accent-hover` | `#047857` (Emerald-700) | Download button hover state |
-| `--color-bg-light` | `#F8FAFC` (Slate-50) | Main background for high contrast readability |
-| `--color-surface` | `#FFFFFF` (Pure White) | Card containers, dropzones, input widgets |
-| `--color-text-main` | `#0F172A` (Slate-900) | Main headings, primary copy |
-| `--color-text-muted` | `#64748B` (Slate-500) | Helper text, specs labels, secondary descriptions |
-| `--color-border` | `#E2E8F0` (Slate-200) | Subtle container and divider lines |
-| `--color-danger` | `#DC2626` (Red-600) | Form error alerts, file oversized notifications |
+| `--bg-page` | `#F8FAFC` | Main page background |
+| `--bg-surface` | `#FFFFFF` | Product cards and navigation |
+| `--bg-surface-elevated` | `#F8FAFC` | Search filters and task labels |
+| `--text-primary` | `#0F172A` | Headings and primary text |
+| `--text-secondary` | `#334155` | Body text |
+| `--text-muted` | `#64748B` | Supporting labels |
+| `--border-subtle` | `#E2E8F0` | Card and control borders |
+| `--zolaha-mantis` | `#047857` | Brand actions and selected filters |
 
-### 2. Typography Specification
-Selected from `typography.csv` (Pairing #13: Friendly SaaS):
-* **Font Family:** `Plus Jakarta Sans`, sans-serif (Google Font)
-* **Heading Scale:**
-  * `H1 (Hero / Tool Title)`: 32px (mobile) / 44px (desktop), font-weight: 700, line-height: 1.15
-  * `H2 (Section Titles)`: 22px (mobile) / 28px (desktop), font-weight: 600, line-height: 1.25
-  * `H3 (Card / Step Titles)`: 18px, font-weight: 600
-* **Body Copy:** 16px (Base), font-weight: 400, line-height: 1.6, color: `#334155`
-* **Labels / Badge Copy:** 12px – 14px, font-weight: 500, uppercase letter-spacing: 0.05em
+Dark mode uses flat charcoal surfaces and a lighter green action color. Gradients are limited to the hero heading.
 
-### 3. Layout & UX Principles
-* **Touch Target Standard:** All mobile buttons, dropzones, and tabs must be $\ge 44 \times 44\text{ px}$.
-* **Zero Layout Shift (CLS < 0.1):** 
-  - Every image preview and ad placeholder must have explicit aspect ratios or CSS `min-height`.
-  - Dropzone height is fixed at `220px` to prevent jumpy page reflows.
-* **Instant Feedback (INP < 200ms):**
-  - Instant progress bar indicator during client-side canvas compression.
-  - File details (original size vs compressed size) displayed in a clean comparative pill.
+### 2. Typography and layout
+
+* **Typeface:** Manrope, with no secondary display font.
+* **Type scale:** 36px mobile hero, 60px desktop hero, 30px mobile section title, 36px desktop section title, 16px body, and 12px metadata.
+* **Page structure:** Plain-spoken studio introduction with a direct link to the available tool, searchable product directory, a short brand promise, and product principles.
+* **Controls:** Minimum 44px touch targets, visible keyboard focus, a full height mobile menu, and a reduced motion fallback.
+* **Content rule:** Do not publish made up usage counts, speed claims, testimonials, or product screens. Mark work in progress as unavailable.
 
 ---
 
@@ -104,7 +92,7 @@ Selected from `typography.csv` (Pairing #13: Friendly SaaS):
 [Phase 1: Keyword & Specs Architecture]  <-- COMPLETED
                  │
                  ▼
-[Phase 2: Zolaha Brand Theme CSS & Assets]  <-- NEXT
+[Phase 2: Zolaha Brand Theme CSS & Assets]  <-- COMPLETED
   • Design tokens (colors, typography, cards)
   • Reusable CSS classes for WordPress
                  │

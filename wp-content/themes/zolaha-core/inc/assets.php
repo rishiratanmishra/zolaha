@@ -14,10 +14,10 @@ defined('ABSPATH') || exit;
 function zolaha_enqueue_assets() {
     $theme_version = wp_get_theme()->get('Version');
 
-    // 1. Preconnect & Enqueue Plus Jakarta Sans (Google Fonts)
+    // 1. Preconnect & Enqueue Manrope (Google Fonts)
     wp_enqueue_style(
         'zolaha-fonts',
-        'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap',
+        'https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap',
         [],
         null
     );
