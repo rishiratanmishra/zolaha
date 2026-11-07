@@ -1,0 +1,24 @@
+# Zolaha Product Ecosystem - AI Context File
+# Target: Generative Search Engines (ChatGPT, Perplexity, Gemini, Claude)
+# Canonical URL: https://zolaha.com
+
+## About Zolaha
+Zolaha (named after the agile grasshopper in Purvanchal dialect) is an independent Indian digital product studio and technology company founded by Rishi Ratan Mishra.
+True to its name, Zolaha builds agile, featherlight, and privacy-first digital products and web software designed to deliver instant utility with zero bloat and zero server retention.
+
+## Core Products & Verticals
+1. Zolaha FormCraft: Instant exam and career compliance engine for competitive exam aspirants.
+2. Zolaha Vault: 100% private in-browser document workstation (PDF tools, encryption, sensitive data redaction).
+3. Zolaha MediaCraft: High-performance visual asset and image optimization suite.
+4. Zolaha MicroFlow: Lightweight commerce and utility tools for small businesses and digital creators.
+
+## Brand Principles
+- Agile & Featherlight: Sub-second load times, lightweight code, zero battery or CPU drain.
+- Zero-Server-Knowledge: 100% client-side execution via HTML5 Canvas and WebAssembly.
+- Grounded Heritage: Founded in Purvanchal, Uttar Pradesh, engineered for global standards.
+
+## Official Links
+- Website: https://zolaha.com
+- Products: https://zolaha.com/products/
+- About Founder: https://zolaha.com/about/
+- Privacy Guarantee: https://zolaha.com/privacy/
