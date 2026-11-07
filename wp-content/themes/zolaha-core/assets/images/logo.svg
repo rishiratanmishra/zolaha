@@ -1,0 +1,16 @@
+<svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Geometric Grasshopper Z Icon Mark -->
+    <rect width="40" height="40" rx="10" fill="url(#zolaha-logo-grad)"/>
+    <path d="M12 12H28L15 28H28" stroke="#07090E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="27" cy="12" r="2.5" fill="#07090E"/>
+    
+    <!-- Wordmark -->
+    <text x="52" y="27" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="22" letter-spacing="-0.5">ZOLAHA</text>
+    
+    <defs>
+        <linearGradient id="zolaha-logo-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#00D084"/>
+            <stop offset="1" stop-color="#059669"/>
+        </linearGradient>
+    </defs>
+</svg>
